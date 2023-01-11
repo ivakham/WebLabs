@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Language, courses, english, tutor, study, IELTS, learning">
+    <meta name="description" content="Language courses page of english language tutor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 ">
+            <header>
+                <div class="links">
+                    <a href="#">Головна</a>
+                    <a href="#">Про нас</a>
+                    <a href="#">Відгуки</a>
+                    <a href="#">Квести</a>
+                    <a href="#">Контакти</a>
+                    <div class="close-cross">
+                        <img src="../assets/img/close-cross.png" alt="close cross" onclick="togglePopup()">
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 d-flex justify-content-between">
+            <div class="main-desc">
+                <span id="name">ТопКвест Київ</span>
+                <span>Квести на любий смак</span>
+            </div>
+            <div class="burger">
+                <img src="../assets/img/burger.png" alt="menu burger" onclick="togglePopup()">
+            </div>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 d-flex">
+            <div class="main-desc-img">
+                <img src="../assets/img/1.png" alt="quests preview desktop">
+                <img src="../assets/img/2.png" alt="quests preview mobile">
+            </div>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+</div>
+<div class="container-fluid dark-background">
+    <div class="row ">
+        <div class="col-1"></div>
+        <div class="col-10 about-section">
+            <span class="section-name">Про нас</span>
+            <span>Ми компанія ТопКвест Київ.</span>
+            <span>Спектр наших послуг - квести на любий смак.</span>
+            <span>На ринку більше 10 років.</span>
+            <span>Маємо більше 2000 задоволених клієнтів.</span>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row d-flex">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 feedback-section">
+            <span class="section-name">Відгуки</span>
+            <div class="feedback-comments">
+                <img src="../assets/img/comm1.png" alt="comment 1">
+                <img src="../assets/img/comm2.png" alt="comment 2">
+                <img src="../assets/img/comm3.png" alt="comment 3">
+            </div>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+</div>
+<div class="container-fluid quests-section dark-background">
+    <div class="row">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 quest first">
+            <span class="section-name">Квести</span>
+            <img src="../assets/img/quest1.png" alt="quest 1">
+            <span>Давній скарб</span>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 quest">
+            <img src="../assets/img/quest2.png" alt="quest 2">
+            <span>Підземелля</span>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-1"></div>
+        <div class="col-sm-8 col-10 quest">
+            <img src="../assets/img/quest3.png" alt="quest 3">
+            <span>Пірат</span>
+        </div>
+        <div class="col-sm-2 col-1"></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1 d-sm-none"></div>
+        <div class="col-10 col-sm-12">
+            <footer>
+                <span class="section-name">Контакти</span>
+                <span>Хочете дізнатися більше?<br>Та замовити Квест?</span>
+                <input type="tel" name="tel-number" placeholder="+380(XX)-XXX-XX-XX">
+                <div class="socials">
+                    <div class="social-icon">
+                        <img src="../assets/img/social1.png" alt="social 1">
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="social-icon">
+                        <img src="../assets/img/social2.png" alt="social 2">
+                        <span>Instagram</span>
+                    </div>
+                    <div class="social-icon">
+                        <img src="../assets/img/social3.png" alt="social 3">
+                        <span>Behance</span>
+                    </div>
+                    <div class="social-icon">
+                        <img src="../assets/img/social4.png" alt="social 4">
+                        <span>Dribble</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="col-1 d-sm-none"></div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

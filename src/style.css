@@ -1,0 +1,259 @@
+@import url("../assets/fonts/Abel");
+* {
+  font-family: Abel, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row > * {
+  padding: 0;
+  margin: 0;
+}
+
+header .links {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0;
+  border-bottom: 1px solid #828282;
+}
+header .links a {
+  color: #828282;
+  font-size: 18px;
+}
+header .links a:nth-child(1) {
+  color: #070707;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+header .links .close-cross {
+  display: none;
+  position: fixed;
+  top: 62px;
+  right: 28px;
+  width: 23px;
+}
+header .links .close-cross img {
+  width: 100%;
+}
+
+.main-desc {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  align-items: center;
+  width: 100%;
+}
+.main-desc #name {
+  font-size: 48px;
+  width: 24%;
+}
+.main-desc span:nth-last-child(1) {
+  margin-left: 20%;
+}
+
+.burger {
+  display: none;
+  margin-top: 45px;
+  width: 33px;
+  height: 20px;
+}
+.burger img {
+  width: 100%;
+}
+
+.dark-background {
+  background: #F6F6F6;
+}
+
+.main-desc-img {
+  padding: 31px 0 104px 0;
+}
+.main-desc-img img:nth-child(1) {
+  width: 100%;
+}
+.main-desc-img img:nth-last-child(1) {
+  display: none;
+  width: 100%;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 110px 0;
+}
+.about-section span:not(.section-name) {
+  margin: 15px 0 20px 0;
+  text-align: center;
+}
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.feedback-section .feedback-comments {
+  margin-top: 131px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.feedback-section .feedback-comments img {
+  width: 25%;
+}
+
+.quests-section {
+  padding-bottom: 100px;
+}
+.quests-section .quest {
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.quests-section .quest .section-name {
+  padding-bottom: 45px;
+}
+.quests-section .quest img {
+  width: 100%;
+}
+.quests-section .quest span:nth-last-child(1) {
+  margin-top: 45px;
+  text-decoration: underline;
+}
+
+.section-name {
+  width: 100%;
+  font-size: 34px;
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+}
+footer .section-name {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+footer input {
+  margin-top: 30px;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  width: 316px;
+  height: 43px;
+}
+footer .socials {
+  display: flex;
+  flex-direction: row;
+}
+footer .socials .social-icon {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  color: #828282;
+  font-size: 14px;
+}
+footer .socials .social-icon img {
+  max-height: 40px;
+}
+
+.active {
+  display: flex !important;
+}
+
+@media screen and (max-width: 575px) {
+  header .links {
+    display: none;
+    position: fixed;
+    justify-content: flex-start !important;
+    background: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+  }
+  header .links a {
+    margin-left: 26px;
+    padding: 16px 0 !important;
+    font-size: 34px !important;
+    width: 35%;
+  }
+  header .links .close-cross {
+    display: flex !important;
+  }
+  .main-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+  .main-desc #name {
+    font-size: 27px;
+    width: min-content;
+  }
+  .main-desc span:nth-last-child(1) {
+    margin: 65px 0 0 0;
+  }
+  .burger {
+    display: flex;
+  }
+  .main-desc-img img:nth-child(1) {
+    display: none;
+  }
+  .main-desc-img img:nth-last-child(1) {
+    display: block;
+    width: 100%;
+  }
+  .about-section {
+    padding: 80px 0 60px 0;
+  }
+  .quest.first {
+    margin-top: 50px !important;
+  }
+  .feedback-section {
+    padding: 80px 0 60px 0;
+    margin-top: 0 !important;
+  }
+  .feedback-section .feedback-comments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback-section .feedback-comments img {
+    margin-top: 180px;
+    width: 60% !important;
+  }
+  .feedback-section .feedback-comments img:nth-child(1) {
+    margin-top: 0 !important;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .socials {
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer .socials .social-icon {
+    margin-top: 50px;
+    padding: 0;
+  }
+  footer .socials .social-icon span {
+    font-size: 14px;
+  }
+  footer input {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
